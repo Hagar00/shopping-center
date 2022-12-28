@@ -18,50 +18,112 @@
     <title>shopping center</title>
 </head>
 <body>
+  <!-- ############### start header  ###################-->
     <header>
-        <div class="top bg-dark">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container">
-                  <a class="navbar-brand left_text" href="#">
-                    <i class="fa-regular fa-sun"></i>
-                    <span> whatever you've got in mind </span>
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                    <ul class="navbar-nav  mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <i class="fa-brands fa-app-store"></i>
-                            app store
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa-brands fa-google-play"></i>
-                            google play 
-                        </a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            eng 
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                      </li>
+        <!-- top nav in header-->
+       <div class="top mb-2">
+        <div class="container">
+          <div class="row ">
+            <div class="left col-lg-7 ">
+              <a class="navbar-brand left_text custom_font" href="#" >
+                <i class="fa-regular fa-sun"></i>
+                <span> whatever you've got in mind </span>
+              </a>
+            </div>
+            <div class="right col-lg-5 ">
+              <div class="row navigation navbar navbar-expand-lg pt-0 pb-0">
+                <ul class="navbar-nav mr-auto justify-content-end  ">
+                  <li class="nav-item ">
+                    <a class="nav-link active custom_font pt-0 pb-0" aria-current="page" href="#">
+                      <i class="fa-brands fa-app-store"></i>
+                      app store
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link custom_font pt-0 pb-0" href="#">
+                      <i class="fa-brands fa-google-play"></i>
+                      google play 
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle custom_font pt-0 pb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                      eng 
+                    </a>
+                    <ul class="dropdown-menu custom_font">
+                      <li><a class="dropdown-item " href="#">english(eng)</a></li>
+                      <li><a class="dropdown-item " href="#">arabic(ar)</a></li>
+                      <li><a class="dropdown-item" href="#">french(fr)</a></li>
                     </ul>
-                   
-                  </div>
-                </div>
-              </nav>
-              
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle custom_font pt-0 pb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                      usd 
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">usd($)</a></li>
+                      <li><a class="dropdown-item" href="#">eur(€)</a></li>
+                    </ul>
+                  </li>
+               </ul>
+              </div>
+            </div>
+          </div>
         </div>
+       </div>
+
+        <!-- end top nav  -->
+        <!-- meddel nav  -->
+      <div class="meddel container">
+         <div class="row">
+          <div class="left col-lg-7 ">
+            <div class="row">
+              <div class="icon_left col-lg-3 col-md-2">
+                <a class="navbar-brand" href="#" target="_self">
+                  <img src="./assest/images/logo.png" alt="Logo"  height="" width="100" class="d-inline-block align-text-top ">
+                </a>
+              </div>
+              <div class="icon_right col-lg-9 col-md-10" >
+                <div class="search-bar">
+                      <select class="search-category"> 
+                      <option value="products" class="menu-item">products</option>
+                      <option value="backgrounds" class="menu-item">backgrounds</option>
+                      <option value="commerce" class="menu-item">E-commerce</option>
+                      <option value="UI & UX" class="menu-item">UI & UX</option>
+                      <option value="web templates" class="menu-item">web templates</option>
+                      <option value="wordpress" class="menu-item">wordpress</option>
+                      <option value="all" class="menu-item">All </option>
+                     </select>
+                  
+                  <label class="input-search">
+                    <input type="text" placeholder="Search" />
+                  </label>
+                  <a href="#" class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right col-lg-5">
+            <div class="row">
+              <div class="my-account">
+                
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+
     </header>
+<!-- ##################### end header #########################  -->
+
+
+
+
+
+
+
+
 
     <!-- font awesome -->
     <link rel="stylesheet" href="./assest/fontawesome-free-6.2.1-web/js/all.min.js">
@@ -69,6 +131,7 @@
     <link rel="stylesheet" href="./assest/fontawesome-free-6.2.1-web/js/fontawesome.min.js">
     <link rel="stylesheet" href="./assest/fontawesome-free-6.2.1-web/js/regular.min.js">
     <!-- JavaScript Bundle with Popper -->
+    <script src="./assest/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
