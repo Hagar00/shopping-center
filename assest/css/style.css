@@ -19,7 +19,8 @@
     border: 1px solid aliceblue;
     width: 40px;
 }
-.top .right li{
+.top .right li,
+.meddel .right ul li {
     display: inline;
 }
 .search-bar {
@@ -29,7 +30,11 @@
     height: 41px;
     margin: 0 auto;
     border-radius: 4px;
-    border: 1px #999999 solid ;
+    border: #999999 solid 1px;
+  }
+  .search-bar:focus-within{
+   outline: rgba(116, 187, 241, 0.848) solid 1px;
+   box-shadow: 3px 3px -1px 5px rgba(116, 187, 241, 0.848);
   }
   .search-category {
     position: relative;
@@ -42,11 +47,10 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     cursor: pointer;
-    outline-color: #b2b1b1;
+    outline-color: #94b556;
 }
-.search-category option {
+.search-category .menu-item {
     background-color: #e7e4e4d3;
-   
 }
 .input-search {
     width: 100%;
@@ -85,4 +89,168 @@
     color: #94b556;
   }
 
+.icon-myacount .custom-personal-icon{
+    border: 1px solid #94b556;
+    width: 43px;
+    height: 42px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 7px;
+    color: #94b556;
+}
+.icon-myacount .custom-cart-icon{
+    padding-top: 10px;
+}
+.cart-icon{
+    position: relative;
+    top:0px
+}
+.cart-icon .cartNum{
+    background-color: #94b556;
+    position: absolute;
+    top: -12px;
+    left: 30px;
+}
+.text-account{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+.middel-one,
+.middel-three{
+    padding-top: 5px;
+    padding-right: 0;
+}
 
+.middel-two .custom_font,
+.middel-four .font-cart {
+    padding-left: 0;
+    color: #3D3C42;
+}
+.dropdown-menu .dropdown-item:hover {
+    color: #94b556;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+.login-link,
+.join-link,
+.price-link{
+  text-decoration: none;
+  color: #3D3C42;
+}
+.login-link:hover,
+.join-link:hover,
+.price-link:hover{
+    color: #94b556;
+}
+
+/************************** select product style  *************************************** */
+
+/* .select {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 2px 0 white;
+    border-radius: 2px;
+  }
+  .select_expand {
+    width: 0;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .select_expand::after {
+    content: '\003E';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+    color: #3e3e3e;
+    font-size: 28px;
+    pointer-events: none;
+    z-index: 2;
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    opacity: 0.6;
+  }
+  .select_expand:hover::after {
+    opacity: 1;
+  }
+  .select_expand:checked::after {
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+  }
+  .select_expandLabel {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  .select_close {
+    display: none;
+  }
+  .select_closeLabel {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .select_items {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #2fb5d1;
+    border-radius: 2px;
+    padding-top: 40px;
+  }
+  .select_input {
+    display: none;
+  }
+  .select_label {
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    display: block;
+    height: 0;
+    font-size: 1.2rem;
+    line-height: 40px;
+    overflow: hidden;
+    color: #3e3e3e;
+    background-color: #fff;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+  .select_label-placeholder {
+    height: 40px;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: transparent;
+  }
+  .select_expand:checked + .select_closeLabel {
+    display: block;
+  }
+  .select_expand:checked + .select_closeLabel + .select_options .select_label {
+    height: 40px;
+  }
+  .select_expand:checked + .select_closeLabel + .select_options .select_label:hover {
+    background-color: #f7f7f7;
+  }
+  .select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel {
+    display: none;
+  }
+  .select_input:checked + .select_label {
+    height: 40px;
+    margin-top: -40px;
+  } */
+  /* * *************************************************************************** */

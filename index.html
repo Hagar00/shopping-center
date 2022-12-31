@@ -73,7 +73,7 @@
 
         <!-- end top nav  -->
         <!-- meddel nav  -->
-      <div class="meddel container">
+      <div class="meddel container mt-2">
          <div class="row">
           <div class="left col-lg-7 ">
             <div class="row">
@@ -82,8 +82,8 @@
                   <img src="./assest/images/logo.png" alt="Logo"  height="" width="100" class="d-inline-block align-text-top ">
                 </a>
               </div>
-              <div class="icon_right col-lg-9 col-md-10" >
-                <div class="search-bar">
+              <div class="icon_right col-lg-9 col-md-10 pt-2" >
+                <div class="search-bar ">
                       <select class="search-category"> 
                       <option value="products" class="menu-item">products</option>
                       <option value="backgrounds" class="menu-item">backgrounds</option>
@@ -93,6 +93,45 @@
                       <option value="wordpress" class="menu-item">wordpress</option>
                       <option value="all" class="menu-item">All </option>
                      </select>
+                     <!-- <form class="">
+  
+                      <ul class="select search-category">
+                        <li>
+                          <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+                          <span class="select_label select_label-placeholder">products</span>
+                        </li>
+                        
+                        <li class="select_items">
+                          <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+                          <label class="select_closeLabel" for="awesomeness-close"></label>
+                          
+                          <ul class="select_options">
+                            <li class="select_option">
+                              <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
+                              <label class="select_label" for="awesomeness-ridiculous">ridiculous</label>
+                            </li>
+                    
+                            <li class="select_option">
+                              <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
+                              <label class="select_label" for="awesomeness-reasonable">reasonable</label>
+                            </li>
+                    
+                            <li class="select_option">
+                              <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
+                              <label class="select_label" for="awesomeness-lacking">lacking</label>
+                            </li>
+                    
+                            <li class="select_option">
+                              <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
+                              <label class="select_label" for="awesomeness-awesomeless">awesomeless</label>
+                            </li>
+                          </ul>
+                          
+                          <label class="select_expandLabel" for="awesomeness-opener"></label>
+                        </li>
+                      </ul>
+                      
+                    </form>  -->
                   
                   <label class="input-search">
                     <input type="text" placeholder="Search" />
@@ -104,10 +143,93 @@
               </div>
             </div>
           </div>
-          <div class="right col-lg-5">
+          <div class="col-lg-1">
+          </div>
+          <div class="right col-lg-4">
             <div class="row">
-              <div class="my-account">
-                
+              <div class="acoount-icon middel-one col-2  text-end">
+                <span class="icon-myacount">
+                  <i class="fa-solid fa-user custom-personal-icon"></i> 
+                </span>
+              </div>
+              <div class="middel-two dropdown col-3 ">
+                <a class="nav-link dropdown-toggle custom_font pt-0 pb-0 d-inline" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                  <span class="text-account"> my account </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-regular fa-user"></i>
+                      my account
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-regular fa-heart"></i>
+                      my wishlist
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      compare
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-check"></i>
+                      checked
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-lock-open"></i>
+                      login
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-user-plus"></i>
+                      create an account
+                    </a>
+                  </li>
+                </ul>
+                <div class="row log-join">
+                  <ul>
+                    <li>
+                      <a href="#" class="login-link">
+                        <span class="text-login">login / </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="join-link">
+                        <span class="text-join"> join </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="middel-three col-2 text-start">
+                <span class="icon-myacount cart-icon d-inline-block">
+                  <a href="#" class="text-decoration-none">
+                    <i class="fa-solid fa-cart-shopping custom-personal-icon custom-cart-icon"></i>
+                    <span class="cartNum badge  badge-secondary  rounded-circle"  > 4 </span>
+                  </a>
+                </span>
+              </div>
+              <div class="middel-four col-3 ">
+                <a class="nav-link font-cart pt-0 pb-0 d-inline" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  >
+                  <span class="text-account"> my cart</span>
+                </a>
+                <div class="row price">
+                  <ul>
+                    <li>
+                      <a href="#" class="price-link">
+                        <span class="text-price">$245.5</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
